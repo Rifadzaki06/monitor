@@ -68,14 +68,14 @@ def login_form(): #Login
 def beranda():
     if st.session_state["role"] == "manajer":
         st.title(f"Selamat Datang, {st.session_state['role'].capitalize()}! 👋")
-        st.info("Gunakan navigasi di sebelah kiri untuk melihat fungsionalitas aplikasi.")
+        st.info("Gunakan navigasi di sebelah kiri untuk melihat fitur aplikasi.")
         st.metric(label="Total Karyawan", value=len(st.session_state['karyawan_data']))
         st.markdown("##### Tugas Manajer:")
         st.write("Anda dapat menginput dan melihat rekapitulasi data kredit karyawan.")
 
     elif st.session_state["role"] == "user":
         st.title(f"Selamat Datang, {st.session_state['username']}! 👋")
-        st.info("Gunakan navigasi di sebelah kiri untuk melihat fungsionalitas aplikasi.")
+        st.info("Gunakan navigasi di sebelah kiri untuk melihat fitur aplikasi.")
         st.markdown("##### Tugas Karyawan:")
         st.write("Anda dapat mengecek gaji berdasarkan kredit Anda.")
        
