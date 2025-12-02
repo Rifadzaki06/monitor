@@ -82,7 +82,7 @@ def beranda():
 def about():
     st.markdown("# Tentang Kami")
     st.markdown("""
-        ## Kelompok 2   
+        ## Kelompok 2
         ##### Kelas : K-28         
         ##### Anggota : 
             - M. Iqbal Aufa (16425185)
@@ -232,7 +232,7 @@ def cek_gaji():
 
 def main_app():
     #Navigasi
-    st.sidebar.title("## Navigasi")
+    st.sidebar.markdown("# Navigasi")
     st.sidebar.markdown("Pilih halaman:")
     
     #Tombol menu navigasi per role
