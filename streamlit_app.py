@@ -232,7 +232,7 @@ def cek_gaji():
 
 def main_app():
     #Navigasi
-    st.sidebar.markdown("#### Navigasi")
+    st.sidebar.title("Navigasi")
     st.sidebar.markdown("Pilih halaman:")
     
     #Tombol menu navigasi per role
