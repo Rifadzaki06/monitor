@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-st.set_page_config(page_title="App Monitoring Kinerja", page_icon="📊", layout="wide")
+st.set_page_config(page_title="TorMonitor", page_icon="📊", layout="wide")
 
 #status
 if "logged_in" not in st.session_state:
@@ -32,6 +32,7 @@ if "karyawan_data" not in st.session_state:
     st.session_state["karyawan_data"] = df_awal
 
 def login_form(): #Login
+    st.markdown("# TorMonitor 1.0")
     with st.form("login_form"):
         st.markdown("#### Masukkan Username dan Password Anda")
         username = st.text_input("Username")
@@ -91,9 +92,9 @@ def about():
             - Liya Zafirah K. (16425465)
     """)
 
-    st.header("Tentang Aplikasi Monitoring Kinerja Karyawan")
+    st.header("Tentang TorMonitor")
     st.write("""
-        Aplikasi Monitoring Kinerja Karyawan ini dirancang untuk memberikan transparansi dan perhitungan yang jelas mengenai kedisiplinan dan kinerja non-akademik staf.
+        TorMonitor merupakan Aplikasi Monitoring Kinerja Karyawan ini dirancang untuk memberikan transparansi dan perhitungan yang jelas mengenai kedisiplinan dan kinerja non-akademik staf.
 """)
 
     st.subheader("Perhitungan Kinerja (Kredit Skor)")
